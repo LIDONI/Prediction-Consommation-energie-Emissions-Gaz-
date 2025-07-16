@@ -1,0 +1,14 @@
+service: service:energy_prediction_service
+
+include:
+  - service.py
+  - schemas.py  # si tu as ce fichier, sinon enlève-le
+  - bentofile.yaml
+
+python:
+  packages:
+    - pandas
+    - numpy
+    - scikit-learn
+    - pydantic
+    - joblib  
